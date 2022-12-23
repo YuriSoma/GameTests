@@ -4,7 +4,7 @@ div#member {
 	width: 100px;
 }
 
-#game-arena {
+#game-land {
 	background-color: blue;
 	padding: 10px;
 	height: 100%;
@@ -19,6 +19,7 @@ html {
 
 .row {
 	width: 1720px;
+	min-height: 100px;
 	background-color: green;
 	padding-top: 10px;
 	padding-left: 10px;
