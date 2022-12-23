@@ -1,3 +1,24 @@
-html {
-	background-color: #ffffe6;
+div#member {
+	border: 2px solid red;
+	height: 100px;
+	width: 100px;
 }
+
+.container-xxl {
+	background-color: green;
+	padding: 10px;
+	padding-left: 10px;
+	max-height: 670px;
+	height: 760px;
+}
+.row {
+	width: 1700px;
+	background-color: lightgreen;
+	padding-left: 10px;
+}
+/* To force user using larg screen
+ /* @media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+} */
