@@ -4,17 +4,25 @@ div#member {
 	width: 100px;
 }
 
-.container-xxl {
-	background-color: green;
+#game-arena {
+	background-color: blue;
 	padding: 10px;
-	padding-left: 10px;
-	max-height: 670px;
-	height: 760px;
+	height: 100%;
+	width: 1720px;
 }
+
+html {
+	max-height: 670px;
+	max-width: 1720px;
+	background-color: lightblue;
+}
+
 .row {
-	width: 1700px;
-	background-color: lightgreen;
+	width: 1720px;
+	background-color: green;
+	padding-top: 10px;
 	padding-left: 10px;
+	padding-bottom: 10px;
 }
 /* To force user using larg screen
  /* @media (min-width: 1400px) {
