@@ -1,7 +1,12 @@
-var addNum = 1;
-var createDiv = "<div class='col-auto g-0''><div id='member'>"+addNum+"</div></div>";
+var addNum = 0;
 var sumCreate = "";
-for (var i=0; i < 50;i++ ) {
+function callCreate(addNum) {
+	var createDiv = "<div class='col-auto g-0''><div id='member'>"+addNum+"</div></div>";
 	sumCreate += createDiv;
-	document.getElementById("members-land").innerHTML = sumCreate;
+	return document.getElementById("members-land").innerHTML = sumCreate;
+}
+
+for (var i=0; i < 500;i++ ) {
+	counter = i + 1;
+	callCreate(counter);
 }
