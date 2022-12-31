@@ -21,7 +21,7 @@ div#member {
 	padding-bottom: 10px;
 }
 
-html {
+html#main-html {
 	max-height: 670px;
 	max-width: 2418px;
 	background-color: lightblue;
@@ -42,9 +42,7 @@ button {
   cursor: pointer;
 }
 
-a {
-	text-decoration: none;
-}
+
 /* To force user using larg screen
  /* @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
