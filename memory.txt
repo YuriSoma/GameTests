@@ -1,0 +1,35 @@
+<button id="rocket" onclick="compareWeapon('rocket')">rocket</button>
+		<button id="paper" onclick="compareWeapon('paper')">paper</button>
+		<button id="scissor" onclick="compareWeapon('scissor')">scissor</button> <br>
+		<div id="result"></div>
+    
+    
+    //////
+    
+    
+    let allWeapons = {first: "rocket", second: "paper", third: "scissor"};
+let ownerWeapon = allWeapons.second;
+
+
+function compareWeapon(weaponChoice) {
+    if (weaponChoice == ownerWeapon) 
+        document.getElementById("result").innerHTML = "Draw";
+    else if (weaponChoice == allWeapons.first)
+        document.getElementById("result").innerHTML = "Lost";
+    else
+        document.getElementById("result").innerHTML = "Win";
+};
+
+function rocketChoice() {
+    document.getElementById("result").innerHTML = "Lost";
+};
+
+function paperChoice() {
+    document.getElementById("result").innerHTML = "draw";
+};
+
+function scissorChoice() {
+    document.getElementById("result").innerHTML = "Win";
+    document.getElementById("result").style = "color: red;";
+};
+    
