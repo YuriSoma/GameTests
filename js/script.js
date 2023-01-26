@@ -15,18 +15,25 @@ function bulidGameLand (){
 
 }
 	
-	function playFinish(buttIdNUM) {
+	function playFinish(buttIdNUM,windowColor) {
 		let IdNUM = buttIdNUM;
 		buttIdNUM = "member-butt"+IdNUM;
+		if (windowColor==1){
+		document.getElementById(buttIdNUM).style = "background-color: lightyellow;";
+		}
+		else {
 		document.getElementById(buttIdNUM).style = "background-color: pink;";
-		document.getElementById("play-butt").remove();
+		}
+		document.getElementById("play-butt1").remove();
+		document.getElementById("play-butt2").remove();
 	}
 
 	function playWindow(buttIdNUM) {
 		let IdNUM = buttIdNUM;
 		buttIdNUM = "member-butt"+IdNUM;
 		console.log(buttIdNUM);
-		document.getElementById("play-div").innerHTML = "<button id='play-butt' onclick='playFinish("+IdNUM+")' style='background-color: lightyellow;'>Test</button>";
+		/* document.getElementById("play-div").innerHTML = "<button id='play-butt1' onclick='playFinish("+IdNUM+",1)' style='background-color: lightyellow;'>Test</button><button id='play-butt2' onclick='playFinish("+IdNUM+",2)' style='background-color: pink;'>Test</button>";*/
+		/*document.getElementById("play-div").innerHTML = ;*/
 	}
 
 
