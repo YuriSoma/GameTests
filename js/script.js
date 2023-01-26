@@ -3,7 +3,7 @@ function bulidGameLand (){
 	var sumCreate = "";
 	function callCreate(addNum) {
 		var memberID = "member-butt" + addNum;
-		var createDiv = "<div class='col-auto g-0'><div id='member'><button id='"+memberID+"' onclick='playWindow("+addNum+")'></button></div></div>";
+		var createDiv = "<div class='col-auto g-0'><div id='member'><button id='"+memberID+"' onclick='playWindow("+addNum+")'>"+addNum+"</button></div></div>";
 		sumCreate += createDiv;
 		return document.getElementById("members-land").innerHTML = sumCreate;
 		}
@@ -31,7 +31,9 @@ function bulidGameLand (){
 	function playWindow(buttIdNUM) {
 		let IdNUM = buttIdNUM;
 		buttIdNUM = "member-butt"+IdNUM;
-		console.log(buttIdNUM);
+		
+
+		
 		/* document.getElementById("play-div").innerHTML = "<button id='play-butt1' onclick='playFinish("+IdNUM+",1)' style='background-color: lightyellow;'>Test</button><button id='play-butt2' onclick='playFinish("+IdNUM+",2)' style='background-color: pink;'>Test</button>";*/
 		/*document.getElementById("play-div").innerHTML = ;*/
 	}
