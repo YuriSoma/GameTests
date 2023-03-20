@@ -7,7 +7,7 @@
     //////
     
     
-    let allWeapons = {first: "rocket", second: "paper", third: "scissor"};
+let allWeapons = {first: "rocket", second: "paper", third: "scissor"};
 let ownerWeapon = allWeapons.second;
 
 

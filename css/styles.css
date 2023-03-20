@@ -9,11 +9,11 @@ div#member {
 	background-color: blue;
 	padding: 10px;
 	height: 100%;
-	width: 2418px;
+	width: 2554px;
 }
 
 .row {
-	width: 2418px;
+	width: 2554px;
 	min-height: 100px;
 	background-color: green;
 	padding-top: 10px;
@@ -42,7 +42,26 @@ button {
   cursor: pointer;
 }
 
+#rock {
+	background: url('../img/rock.png') no-repeat;
+}
 
+#paper {
+	background: url('../img/paper.jpg') no-repeat;
+}
+
+#scissor {
+	background: url('../img/scissor.jpg') no-repeat;
+}
+
+#weaponButt {
+	border: 2px solid red;
+	margin: 2px;
+}
+
+#result {
+	color: red;
+}
 /* To force user using larg screen
  /* @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
