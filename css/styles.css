@@ -21,6 +21,13 @@ div#member {
 	padding-bottom: 10px;
 }
 
+.row#play-row{
+	background-color: white;
+	max-width: 100%;
+}
+
+
+
 html#main-html {
 	max-height: 670px;
 	max-width: 2418px;
