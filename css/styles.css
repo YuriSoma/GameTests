@@ -34,41 +34,29 @@ html#main-html {
 	background-color: lightblue;
 }
 
-button {
+.member-butt {
 	
   background-color: lightgrey;
   border: none;
   color: black;
-  height: 96px;
-  width: 96px;
+  height: 98px;
+  width: 98px;
   text-align: center;
   text-decoration: none;
   display: grid;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 1px 1px;
   cursor: pointer;
 }
 
-#rock {
-	background: url('../img/rock.png') no-repeat;
+#guess-result {
+	background-color: blue;
+	height: 40px;
+ 	width: 150px;
+	
 }
 
-#paper {
-	background: url('../img/paper.jpg') no-repeat;
-}
 
-#scissor {
-	background: url('../img/scissor.jpg') no-repeat;
-}
-
-#weaponButt {
-	border: 2px solid red;
-	margin: 2px;
-}
-
-#result {
-	color: red;
-}
 /* To force user using larg screen
  /* @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {

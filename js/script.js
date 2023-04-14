@@ -1,22 +1,28 @@
+function testObj(myObj){
+	let testVar = "memeber167";
+	console.log(myObj.Health);
+}
+
 function bulidGameLand (){
-	var addNum = 0;
+	var addNum = "member167";
 	var sumCreate = "";
 
 	/*let clanColor = "";
 	document.getElementById("members-land").innerHTML = "<h1>Please choose your CLAN color</h1>";*/
 	
+	const testMD = {};
+
 	function callCreate(addNum) {
 		var memberID = "member-butt" + addNum;
 		var createDiv = `<div class='col-auto g-0'
-		><div id='member'><button id='${memberID}' value='${addNum}
-		' onclick='playWindow(${addNum})
+		><div id='member'><button id='${memberID}' class='member-butt' 
+		value='${addNum}' onclick='playWindow(${addNum})
 		'>${addNum}</button></div></div>`;
 		sumCreate += createDiv;
 		return document.getElementById("members-land").innerHTML = sumCreate;
 		}
 	
-		const testMD = {};
-		function createObj(counter) {
+	function createObj(counter) {
 		let memberID = "member" + counter;
 		/* let memberDetails = {
 			id:"",
@@ -30,7 +36,7 @@ function bulidGameLand (){
 
 		testMD[memberID].id = counter;
 		testMD[memberID].memberName = counter;
-		testMD[memberID].health = Math.floor(Math.random() * 101);
+		testMD[memberID].Health = Math.floor(Math.random() * 101);
 		testMD[memberID].Shield = Math.floor(Math.random() * 101);
 		testMD[memberID].Power = Math.floor(Math.random() * 101);
 
@@ -42,12 +48,16 @@ function bulidGameLand (){
 		createObj(counter);
 	} 
 
-	console.log(testMD);
+	console.log(testMD[addNum]);
+
+	testObj(testMD[addNum]);
 
 	
 
 }
 	
+
+
 	/* function playFinish(buttIdNUM,windowColor) {
 		let IdNUM = buttIdNUM;
 		buttIdNUM = "member-butt"+IdNUM;
@@ -62,7 +72,7 @@ function bulidGameLand (){
 	} */
 
 	function playWindow(buttIdNUM) {
-		
+
 		///// Makes IDs for every button to be handled later
 		let IdNUM = buttIdNUM;
 		buttIdNUM = "member-butt"+IdNUM;
@@ -77,22 +87,18 @@ function bulidGameLand (){
 		</button></div>
 		
 		<div class='col' id='guess-col'><h2 id='gc-title'>Guess...</h2>
-		<form>
 		<label>Health: </label>
-		<input type='number'></input><br>
+		<input type='number' id='guess-health'></input><br>
 		<label>Shield: </label>
-		<input type='number'></input><br>
+		<input type='number' id='guess-shield'></input><br>
 		<label>Power: </label>
-		<input type='number'></input><br>
-		<input type='submit'></input>
-		</form>
+		<input type='number' id='guess-power'></input><br>
+		<button onclick='guessingResult(${IdNUM})' id='guess-result'></button>
 		</div>
 		
 		<div class='col' id='member-profile'>
 		<h2 id='mp-title'>Member Profile</h2>
 		</div></div></div>`;
-
-		
 
 		//document.getElementById("play-div").focus();
 
@@ -103,6 +109,25 @@ function bulidGameLand (){
 
 		/* document.getElementById("play-div").innerHTML = "<button id='play-butt1' onclick='playFinish("+IdNUM+",1)' style='background-color: lightyellow;'>Test</button><button id='play-butt2' onclick='playFinish("+IdNUM+",2)' style='background-color: pink;'>Test</button>";*/
 		/*document.getElementById("play-div").innerHTML = ;*/
+	}
+
+	function guessingResult(IdNUM) {
+		let memberID = "member" + IdNUM;
+		let guessedHealth = document.getElementById("guess-health").value;
+		document.getElementById("guess-health").value = "";
+		let guessedShield = document.getElementById("guess-shield").value;
+		document.getElementById("guess-shield").value = "";
+		let guessedPower = document.getElementById("guess-power").value;
+		document.getElementById("guess-power").value = "";
+
+		//let memberHealth = strObj[memberID].health;
+		//let memberShield = testMD[memberID].shield;
+		//let memberPower = testMD[memberID].power;
+
+
+		console.log();
+
+		//if (guessedHealth === 1)
 	}
 	
 
